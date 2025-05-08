@@ -42,7 +42,7 @@ export default function App() {
   };
 
   const clearCompleted = () => {
-    tasks.filter((task) => !task.completed);
+    setTasks(tasks.filter((task) => !task.completed))
   };
 
   const filterdTasks = tasks.filter((task) => {
@@ -56,7 +56,7 @@ export default function App() {
   });
   return (
     <div className="flex items-center justify-center min-h-screen ">
-      <div className="max-w-full sm:max-w-xl md:max-w-2xl min-h-[32rem] container flex flex-col gap-4 sm:gap-8 mx-auto p-2 sm:p-4 bg-white rounded-lg shadow-lg">
+      <div className="max-w-full sm:max-w-xl md:max-w-2xl min-h-[32rem] container flex flex-col gap-6 sm:gap-8 mx-auto p-4 sm:p-6 bg-white rounded-lg shadow-lg">
         <div className="w-full text-center">
           <h1 className="text-3xl sm:text-5xl my-6 text-bold text-slate-400">
             Todo List

@@ -12,7 +12,7 @@ function FilterButtons({ filter, setFilter }: FilterButtonsProps) {
         <button
           key={item}
           className={`w-full py-2 sm:py-3 px-4 sm:px-8 text-slate-400 cursor-pointer border-b-2 text transition-colors duration-200 
-                    ${filter === item ? "text-teal-600 border-b-2 scale-105 border-teal-600 " : "text-slate-800  border-slate-50 hover:border-b-2 hover:border-slate-500 border-transparent"}
+                    ${filter === item ? "text-teal-600 border-b-2 border-teal-600 " : "text-slate-800  border-slate-50 hover:border-b-2 hover:border-slate-500 border-transparent"}
                     `}
           onClick={() => {
             setFilter(item);
